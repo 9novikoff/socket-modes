@@ -1,16 +1,13 @@
 #  SOCKET_MODES
 
----
 
 ##  Overview
 
 Socket Communication Performance Benchmark 
 
----
 
 ##  Repository Structure
 
----
 
 ##  Getting Started
 
