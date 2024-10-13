@@ -52,8 +52,8 @@ Client Modes:
 
 Example:
 ```sh
-docker run --network host -v /path/to/your_server_directory:/server/volume 9novikov/socket_server ./server -mode inet_sync_blocking -num_packets 10000 -packet_size 100
-docker run --network host -v /path/to/your_client_directory:/client/volume 9novikov/socket_client ./client -mode inet -num_packets 10000 -packet_size 100
+docker run --network host -v /path/to/directory:/server/volume 9novikov/socket_server ./server -mode inet_sync_blocking -num_packets 10000 -packet_size 100
+docker run --network host -v /path/to/directory:/client/volume 9novikov/socket_client ./client -mode inet -num_packets 10000 -packet_size 100
 ```
 
 ## Benchmarks
