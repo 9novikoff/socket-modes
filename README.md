@@ -36,19 +36,19 @@ Note: Replace [your_directory] with the path to the directory you want to share,
 
 Server Modes:
 
-inet_sync_blocking
-inet_sync_nonblocking
-inet_async_blocking
-inet_async_nonblocking
-unix_sync_blocking
-unix_sync_nonblocking
-unix_async_blocking
-unix_async_nonblocking
+- inet_sync_blocking
+- inet_sync_nonblocking
+- inet_async_blocking
+- inet_async_nonblocking
+- unix_sync_blocking
+- unix_sync_nonblocking
+- unix_async_blocking
+- unix_async_nonblocking
 
 Client Modes:
 
-inet
-unix
+- inet
+- unix
 
 Example:
 ```sh
