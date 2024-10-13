@@ -24,12 +24,12 @@ Socket Communication Performance Benchmark
 
 Run server
 ```sh
-docker run --network host -v [your_directory]:/server/volume socket-server -mode [server_mode] -num_packets [number] -packet_size [size]
+docker run --network host -v [your_directory]:/server/volume 9novikov/socket_server ./server -mode [server_mode] -num_packets [number] -packet_size [size]
 ```
 
 Run client
 ```sh
-docker run --network host -v [your_directory]:/client/volume socket-client -mode [client_mode] -num_packets [number] -packet_size [size]
+docker run --network host -v [your_directory]:/client/volume 9novikov/socket_client ./client -mode [client_mode] -num_packets [number] -packet_size [size]
 ```
 
 Note: Replace [your_directory] with the path to the directory you want to share, [server_mode] with one of the 8 server modes, [client_mode] with one of the 2 client modes, [number] with the number of packets, and [size] with the packet size.
@@ -52,6 +52,6 @@ unix
 
 Example:
 ```sh
-docker run --network host -v /path/to/your_server_directory:/server/volume socket-server -mode inet_sync_blocking -num_packets 10000 -packet_size 100
-docker run --network host -v /path/to/your_client_directory:/client/volume socket-client -mode inet -num_packets 10000 -packet_size 100
+docker run --network host -v /path/to/your_server_directory:/server/volume 9novikov/socket_server ./server -mode inet_sync_blocking -num_packets 10000 -packet_size 100
+docker run --network host -v /path/to/your_client_directory:/client/volume 9novikov/socket_client ./client -mode inet -num_packets 10000 -packet_size 100
 ```
