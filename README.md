@@ -6,8 +6,6 @@
 Socket Communication Performance Benchmark 
 
 
-##  Repository Structure
-
 
 ##  Getting Started
 
